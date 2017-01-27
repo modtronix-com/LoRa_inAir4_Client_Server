@@ -324,20 +324,20 @@ void BurstWrite(unsigned char adr, unsigned char *ptr, unsigned char leng)
 }
 
 	
-	// Parameter Table Definition
-
+// Parameter Table Definition
 unsigned char sx1278FreqTbl[1][3] =
 {
 	{ 0x6C, 0x80, 0x00}, //434Mhz
 };
 
-
+//Configures the power output. Ensure bit 7 is cleared for inAir4! This is because the inAir4 uses
+//the RFO output pin(low power mode), and NOT the PA_BOOST pin.
 unsigned char sx1278PowerTbl[4] =
 {
-	0xFF,
-	0xFC,
-	0xF9,
-	0xF6,
+	0x7F,
+	0x7C,
+	0x79,
+	0x76,
 };
 
 
