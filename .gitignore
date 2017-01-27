@@ -28,6 +28,27 @@
 *.out
 *.app
 
-# Other
+# Modtronix
+# =========================
+*.bak
 *.nobak
 *.nodis
+*_MODTRONIX.txt
+MODTRONIX_*.txt
+build_dist.bat
+build_dist.xml
+
+# Mercurial Repository
+# =========================
+.hgignore
+**/.hg/cache
+**/.hg/store
+**/.hg/bookmark
+**/.hg/branch
+**/.hg/dirstate
+**/.hg/requires
+**/.hg/thgstatus
+**/.hg/undo*
+**/.hg/00changelog*
+**/.hg/cur-message*
+**/.hg/last-message*
